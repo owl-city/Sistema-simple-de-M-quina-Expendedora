@@ -66,5 +66,3 @@ if Dinero > 0:
                 print("Proporcine un código válido")
 else:
         print("Tienes que elegir un número")
-
-
