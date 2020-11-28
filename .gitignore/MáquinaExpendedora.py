@@ -30,49 +30,61 @@ while True:
     except:
         print ("Error")
 
-Dinero=float(input("Introduce tu moneda: "))
-if Dinero > 0:
-        
-        print(f"Ingresó ${Dinero}")
-    
-        if Boton == "A1":
+
+while True:
+    try:
+        Dinero=float(input("Introduce tu moneda: "))
+        if Dinero > 0:      
+            print(f"Ingresó ${Dinero}")
+
+            if Boton == "A1":
                 if Dinero  < 6 :
-                        suma=(6-Dinero)
-                        print (f"Le falta ${suma}")
+                    suma=(6-Dinero)
+                    print (f"Le falta ${suma}")
                 else:
-                        suma=(Dinero-6)
-                        print(f"Su cambio es de ${suma} pesos")
+                    suma=(Dinero-6)
+                    print(f"Su cambio es de ${suma} pesos")
+                    break
 
-        elif Boton == "A2":
+            elif Boton == "A2":
                 if Dinero < 7.50:
-                        suma=(7.50-Dinero)
-                        print(f"Le falta ${suma}")
+                    suma=(7.50-Dinero)
+                    print(f"Le falta ${suma}")
                 else:
-                        suma=(Dinero-7.50)
-                        print(f"Su cambio es de ${suma} pesos")
+                    suma=(Dinero-7.50)
+                    print(f"Su cambio es de ${suma} pesos")
+                    break
 
-        elif Boton == "A3":
+            elif Boton == "A3":
                 if Dinero < 8:
-                        suma=(8-Dinero)
-                        print(f"Le falta ${suma}")
+                    suma=(8-Dinero)
+                    print(f"Le falta ${suma}")
                 else:
-                        suma=(Dinero-8)
-                        print(f"Su cambio es de ${suma} pesos")
-        elif Boton == "A4":
+                    suma=(Dinero-8)
+                    print(f"Su cambio es de ${suma} pesos")
+                    break
+
+            elif Boton == "A4":
                 if Dinero < 10:
-                        suma=(10-Dinero)
-                        print(f"Le falta ${suma}")
+                    suma=(10-Dinero)
+                    print(f"Le falta ${suma}")
                 else:
-                        suma=(Dinero-10)
-                        print(f"Su cambio es de ${suma} pesos")
-        elif Boton == "A5":
+                    suma=(Dinero-10)
+                    print(f"Su cambio es de ${suma} pesos")
+                    break
+
+            elif Boton == "A5":
                 if Dinero < 11:
-                        suma=(11-Dinero)
-                        print(f"Le falta ${suma}")
+                    suma=(11-Dinero)
+                    print(f"Le falta ${suma}")
                 else:
-                        suma=(Dinero-11)
-                        print(f"Su cambio es de ${suma} pesos")
-        else:
+                    suma=(Dinero-11)
+                    print(f"Su cambio es de ${suma} pesos")
+                    break
+
+            else:
                 print("Proporcine un código válido")
-else:
-        print("Tienes que elegir un número real")
+        else:
+            print("Tienes que elegir un número real")
+    except:
+        print ("Error, ingresa correctamente el monto requerido")
