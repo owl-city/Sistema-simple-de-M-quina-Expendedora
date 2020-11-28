@@ -4,27 +4,32 @@ def main():
 if __name__ == "__main__":
         main()
 print("A1, A2, A3, A4, A5" '\n')
+while True:
+    try:
+        Boton=input("Elige un código: ")
+        MiTupla=("A1", "A2", "A3", "A4", "A5")
+        MiDiccionario={MiTupla[0]:"$6", MiTupla[1]:"$7.50", MiTupla[2]:"$8", MiTupla[3]:"$10", MiTupla[4]:"$11"}
+   
+        if Boton == "A1":
+            print(f"El precio es de: {MiDiccionario[Boton]}" '\n')
+            break
+        elif Boton == "A2":
+            print(f"El precio es de: {MiDiccionario[Boton]}" '\n')
+            break
+        elif Boton == "A3":
+            print(f"El precio es de: {MiDiccionario[Boton]}" '\n')
+            break
+        elif Boton == "A4":
+            print(f"El precio es de: {MiDiccionario[Boton]}" '\n')
+            break
+        elif Boton == "A5":
+            print(f"El precio es de: {MiDiccionario[Boton]}" '\n')
+            break
+        else:
+            print("El código no existe, introduce un código válido")
+    except:
+        print ("Error")
 
-Boton=input("Elige un código: ")
-
-
-MiTupla=("A1", "A2", "A3", "A4", "A5")
-MiDiccionario={MiTupla[0]:"$6", MiTupla[1]:"$7.50", MiTupla[2]:"$8", MiTupla[3]:"$10", MiTupla[4]:"$11"}
-
-if Boton == "A1":
-        print(f"El precio es de: {MiDiccionario[Boton]}" '\n')
-elif Boton == "A2":
-        print(f"El precio es de: {MiDiccionario[Boton]}" '\n')
-elif Boton == "A3":
-        print(f"El precio es de: {MiDiccionario[Boton]}" '\n')
-elif Boton == "A4":
-        print(f"El precio es de: {MiDiccionario[Boton]}" '\n')
-elif Boton == "A5":
-        print(f"El precio es de: {MiDiccionario[Boton]}" '\n')
-else:
-        print("El código no existe, introduce un código válido")
-        exit()                
-        
 Dinero=float(input("Introduce tu moneda: "))
 if Dinero > 0:
         
