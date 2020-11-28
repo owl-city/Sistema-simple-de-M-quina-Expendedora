@@ -30,10 +30,9 @@ while True:
     except:
         print ("Error")
 
-
+Dinero = 0
 while True:
-    try:
-        Dinero=float(input("Introduce tu moneda: "))
+        Dinero=float(input("Introduce tu moneda: ")) + Dinero
         if Dinero > 0:      
             print(f"Ingresó ${Dinero}")
 
@@ -86,5 +85,3 @@ while True:
                 print("Proporcine un código válido")
         else:
             print("Tienes que elegir un número real")
-    except:
-        print ("Error, ingresa correctamente el monto requerido")
